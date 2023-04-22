@@ -215,9 +215,6 @@ M.RemoveBookmark = function(opts)
     finder = finders.new_table {
       results = lines,
     },
-    layout_config = {
-      preview_width = 0.5,
-    },
     sorter = conf.file_sorter(opts),
     previewer = conf.file_previewer(opts),
     attach_mappings = function(prompt_bufnr, map)
